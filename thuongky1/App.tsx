@@ -14,6 +14,9 @@ export default function App() {
         <Text style={styles.tieuDe}>DANH SÁCH SẢN PHẨM</Text>
       </View>
       <ProductList />
+      <View style={styles.header}>
+        <TouchableOpacity style={styles.gioHang}>Giỏ hàng</TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -34,4 +37,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
+  gioHang: {
+    fontSize: 30,
+    backgroundColor: 'blue',
+    justifyContent: 'center',
+    textAlign: 'center',
+    margin: 30,
+  }
 });
